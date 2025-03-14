@@ -96,7 +96,7 @@ class FrameAnalysis():
             if len(buffer) == expected_vertex_count:
                 break
 
-        handle_no_weight_blend(buffer, buffer_elements)
+        buffer, buffer_elements = handle_no_weight_blend(buffer, buffer_elements)
 
         return buffer, buffer_elements
 
